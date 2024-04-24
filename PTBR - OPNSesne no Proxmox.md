@@ -56,10 +56,11 @@ Não marque para inicializar ainda.
 
 ## Passo 2 - Vá para a aba de hardware
 Adicione mais interfaces de rede, quantas precisar usando o mesmo método anterior, mas desta vez coloque a ponte que será a lan, guest, etc; Mas seja minimalista, quanto menos interfaces, mais rápido e estável será.  
+Qualquer configuração de bridge, faca diretamente no Proxmox;  
 Adicione um Virtio RNG e selecione /dev/urandom ou /dev/hwrng se disponível (opcional).  
 
 ## Passo 3 - Vá para a aba opções
-Desmarque o ponteiro de tabela.  
+Desmarque o ponteiro de tablet.  
 Confira a ordem do boot para a imagem de disco do OPNSense.  
 Selecione apenas rede em hotplug.  
 Selecione "Não" no Local para RTC.  
