@@ -449,3 +449,4 @@ Configure o roteador para apontar para o ip servidor PXE no arquivo de inicializ
 ---
 
 Agora o ambiente PXE está pronto. Ao iniciar uma máquina na rede no modo PXE, acesse o menu de instalação do Windows via Netboot.xyz e siga as instruções para iniciar a instalação.
+Extra: caso alguma máquina não consiga se conectar, tente desabilitar a inicialização segura
