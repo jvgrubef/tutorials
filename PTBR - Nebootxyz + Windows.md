@@ -115,6 +115,9 @@ Este guia ensina como configurar um servidor PXE com Netboot.xyz para instala√ß√
 - Baixe e instale o [Windows ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install) e o complemento do Windows PE.
 
 ### Comandos
+
+Use `Deployment and Imaging Tools Environment` como administrador
+
 1. **Crie a imagem do WinPE**:
    ```powershell
    copype amd64 C:\WinPE_amd64
