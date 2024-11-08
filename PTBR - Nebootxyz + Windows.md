@@ -171,6 +171,8 @@ Este guia ensina como configurar um servidor PXE com Netboot.xyz para instalaç�
 
 ## Passo 6: Criação de `setup.bat` e `winpeshl.ini`
 
+Clique em `menu`, na guia para selecionar ou editar, crie os arquivos:
+
 1. **Conteúdo do `winpeshl.ini`**:
    ```ini
    [LaunchApps]
