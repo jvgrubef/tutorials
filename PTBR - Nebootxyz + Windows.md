@@ -149,9 +149,9 @@ Este guia ensina como configurar um servidor PXE com Netboot.xyz para instalaç�
 ## Passo 5: Configuração de Arquivos para o Netboot.xyz
 
 1. **Estrutura de Pastas para Windows no Container**:
-   - `/windows/WinPE/x64` → Arquivos do WinPE
-   - `/windows/Windows_10(x64)` → Arquivos do Windows 10
-   - `/windows/Windows_11(x64)` → Arquivos do Windows 11
+   - `/windows/WinPE/x64` → Arquivos extraidos da iso do WinPE
+   - `/windows/Windows_10(x64)` → Arquivos extraidos da iso do Windows 10 (x64)
+   - `/windows/Windows_11(x64)` → Arquivos extraidos da iso do Windows 11 (x64)
 
 2. **Configuração de `boot.cfg` no dashboard do Netboot.xyz**:
    Altere os parâmetros para:
