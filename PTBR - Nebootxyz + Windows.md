@@ -22,7 +22,7 @@ Este guia ensina como configurar um servidor PXE com Netboot.xyz para instalaç�
 1. Crie um arquivo `docker-compose.yml` com o conteúdo abaixo, substituindo `<uid>` e `<gid>` pelos valores do usuário criado e ajustando o caminho para a pasta do Netboot.xyz.
 
    ```yaml
-   version: '3'
+   ---
    services:
      netbootxyz:
        image: lscr.io/linuxserver/netbootxyz:latest
@@ -32,14 +32,18 @@ Este guia ensina como configurar um servidor PXE com Netboot.xyz para instalaç�
          - PGID=<gid>
          - TZ=Etc/UTC
          - MENU_VERSION=1.9.9
-       ports:
-         - 3000:3000
-         - 69:69/udp
-         - 8080:8080
+         - PORT_RANGE=30000:30010
+         - SUBFOLDER=/
+         - NGINX_PORT=8080
+         - WEB_APP_PORT=3000
        volumes:
          - /path/to/netbootxyz/config:/config
          - /path/to/netbootxyz/assets:/assets
          - /path/to/netbootxyz/windows:/windows
+       ports:
+         - 3000:3000
+         - 69:69/udp
+         - 8080:8080
        restart: unless-stopped
    ```
 
