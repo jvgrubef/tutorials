@@ -180,6 +180,10 @@ Clique em `menu`, na guia para selecionar ou editar, crie os arquivos:
    ```
 
 2. **Conteúdo do `setup.bat`**:
+
+   Opcionalmente, você já pode pré-definir o servidor samba e o caminho do compartilhamento:
+   `set "server_standard=\\<ip_do_servidor>\PXE\"`
+
    ```batch
    @echo off
    title SK PXE AUX
@@ -219,7 +223,9 @@ Clique em `menu`, na guia para selecionar ou editar, crie os arquivos:
    )
 
    title SK PXE AUX - Installer
-   set "server_standard=\\10.0.100.8\PXE\"
+   rem Opcionalmente, você já pode pré-definir o servidor samba e o caminho do compartilhamento
+   rem Exemplo: set "server_standard=\\<ip_do_servidor>\PXE\"
+   set "server_standard="
    set "server=%server_standard%"
    set "username="
    set "password="
