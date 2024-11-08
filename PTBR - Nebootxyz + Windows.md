@@ -442,7 +442,7 @@ systemctl restart smbd
 
 ## Passo 8: Configuração do Servidor PXE no Roteador
 
-Configure o roteador para apontar para o ip servidor PXE no arquivo de inicialização:
+Configure o roteador para apontar para o ip do servidor PXE no arquivo de inicialização:
 - Para sistemas EFI, `netboot.xyz.efi`.
 - Para sistemas legados, `netboot.xyz.kpxe`.
 
