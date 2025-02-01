@@ -453,6 +453,10 @@ Configure o roteador para apontar para o ip do servidor PXE no arquivo de inicia
 - Para sistemas EFI, `netboot.xyz.efi`.
 - Para sistemas legados, `netboot.xyz.kpxe`.
 
+Adicional: Alguns servidores DHCP possibilitam multi arquitetura, por exemplo:
+ - Para OpenWRT, confira este [script para boot via TFTP multi-arquitetura](https://github.com/jvgrubef/toolbox/blob/main/batch/openwrt-multi-arch-tftp-boot.sh).
+ - No OPNSense e PFSense, nas configurações de DHCP você consegue encontrar os campos para cada arquivo.
+
 ---
 
 Agora o ambiente PXE está pronto. Ao iniciar uma máquina na rede no modo PXE, acesse o menu de instalação do Windows via Netboot.xyz e siga as instruções para iniciar a instalação.
