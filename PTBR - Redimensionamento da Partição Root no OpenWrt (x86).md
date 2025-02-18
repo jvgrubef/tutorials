@@ -6,7 +6,7 @@ Este guia é para usuários com experiência em computação e administração d
 [Link para documentação oficial](https://openwrt.org/docs/guide-user/installation/openwrt_x86)  
 
 ### Mudanças na versão atual  
-- **Seção de Diagnóstico adicionada** (agradecimento a @efahl pela sugestão!).  
+- **Seção de Diagnóstico adicionada**.  
 - **Seção de Redimensionamento do Sistema de Arquivos Root atualizada** para seguir as orientações mais recentes.  
 
 ---
